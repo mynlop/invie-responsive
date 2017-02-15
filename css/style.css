@@ -2,7 +2,7 @@ body{
     font-family: 'Allerta', sans-serif;
     margin: 0;
 }
-button{
+.button{
     color: white;
     background: #fd324e;
     border: none;
@@ -82,3 +82,43 @@ button{
 .contenedor-guitarra-b{
     margin-left: 370px;
 }
+.footer{
+    background: #273b47;
+    color: white;
+}
+.contacto{
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contacto img{
+    display: block;
+}
+.contacto strong{
+    display: block;
+}
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 0;
+}
+.footer .contenedor{
+    display: flex;
+}
+.formulario{
+    display: flex;
+    width: 400px;
+    padding: 30px 10px;
+}
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+}
+.col1{margin-right: 15px;}
+.col2{align-items: flex-start;}
+.intereses label{font-size: 12px;}
+.formulario label, .sexo, .intereses{
+    margin-bottom: 10px;
+}
+.sexo{margin-top: 10px;}
