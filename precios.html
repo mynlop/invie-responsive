@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invie -Precios-</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+</head>
+<body>
+    <!--empieza header-->
+    <header id="header" class="header contenedor">
+        <figure class="logotipo">
+            <img src="images/invie.png" width="186" height="60" alt="Invie logo">
+        </figure>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#guitarras">Guitarras</a></li>
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--termina header-->
+    <section class="table">
+        <div class="contenedor">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Precio</th>
+                        <th>Descipción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Invie Classic</td>
+                        <td>$1000</td>
+                        <td>Una guitrra clasica muy original.</td>
+                    </tr>
+                    <tr>
+                        <td>Invie Classic</td>
+                        <td>$1000</td>
+                        <td>Una guitrra clasica muy original.</td>
+                    </tr>
+                    <tr>
+                        <td>Invie Classic</td>
+                        <td>$1000</td>
+                        <td>Una guitrra clasica muy original.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+   <!--empieza footer-->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="contacto">
+                <img src="images/invie-white.png" alt="Logotipo blanco">
+                <a href="tel:+502236130"><strong>Telefono </strong><span>2236130</span></a>
+                <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+            </div>
+            <div class="formulario">
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" required name="nombre">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" required name="correo">
+                    <div class="sexo">
+                        <label for="mujer">
+                            <input type="radio" id="mujer" name="sexo" value="mujer" checked>Mujer
+                        </label>
+                        <label for="hombre">
+                            <input type="radio" id="hombre" name="sexo" value="hombre">Hombre
+                        </label>
+                    </div>
+                    <div class="intereses">
+                        <label for="cotizacion">
+                            <input type="checkbox" id="cotizacion" value="cotizacion" checked> Cotización
+                        </label>
+                        <label for="reclamos">
+                            <input type="checkbox" id="reclamos" value="reclamos"> Reclamos
+                        </label>
+                        <label for="comentario">
+                            <input type="checkbox" id="comentario" value="comentarios"> Comentarios
+                        </label>
+                        <label for="otros">
+                            <input type="checkbox" id="otros" value="otros"> Otros
+                        </label>
+                    </div>
+                </div>
+                <div class="col2">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="5" ></textarea>
+                    <input type="submit" value="Enviar" class="button">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!--termina footer-->
+</body>
+</html>

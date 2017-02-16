@@ -122,3 +122,14 @@ body{
     margin-bottom: 10px;
 }
 .sexo{margin-top: 10px;}
+.table table{width: 100%;}
+th{
+    background: #273b47;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+td{
+    padding: 10px;
+}
+table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
