@@ -6,6 +6,7 @@
     <title>Invie</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 </head>
 <body>
     <!--empieza portada-->
@@ -34,7 +35,7 @@
     <section id="guitarras" class="guitarras contenedor">
         <h2>Nuestras Guitarras</h2>
         <article class="guitarra">
-            <img class="derecha" src="images/invie-acustica.png" alt="Guitarra Acustica" width="350">
+            <img class="derecha" data-src="images/invie-acustica.png" alt="Guitarra Acustica" width="350">
             <div class="contenedor-guitarra-a">
                 <h3 class="titulo-b">Invie Acustica</h3>
                 <ol>
@@ -45,7 +46,7 @@
             </div>
         </article>
         <article class="guitarra b">
-            <img class="izquierda" src="images/invie-classic.png" alt="Guitarra Invie Classic" width="350">
+            <img class="izquierda" data-src="images/invie-classic.png" alt="Guitarra Invie Classic" width="350">
             <div class="contenedor-guitarra-b">
                 <h3 class="titulo-b">Invie Classic</h3>
                 <ol>
@@ -61,7 +62,7 @@
     <footer class="footer">
         <div class="contenedor">
             <div class="contacto">
-                <img src="images/invie-white.png" alt="Logotipo blanco">
+                <img data-src="images/invie-white.png" alt="Logotipo blanco">
                 <a href="tel:+502236130"><strong>Telefono </strong><span>2236130</span></a>
                 <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
             </div>
@@ -110,6 +111,9 @@
         var $menu = document.getElementById('menu');
 
         mediaQuery();
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
 
         function mediaQuery(){
             if(consulta.matches){
