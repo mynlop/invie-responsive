@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Invie</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
@@ -13,7 +14,8 @@
             <figure class="logotipo">
                 <img src="images/invie.png" width="186" height="60" alt="Invie logo">
             </figure>
-            <nav class="menu">
+            <span id="burger-button" class="burger-button icon-menu"></span>
+            <nav id="menu" class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#guitarras">Guitarras</a></li>
@@ -97,10 +99,18 @@
                     <textarea name="comentarios" id="comentarios" cols="30" rows="5" ></textarea>
                     <input type="submit" value="Enviar" class="button">
                 </div>
-
             </div>
         </div>
     </footer>
     <!--termina footer-->
+    <script>
+        var $burgerButton = document.getElementById('burger-button');
+        var $menu = document.getElementById('menu');
+        $burgerButton.addEventListener('touchstart', toogleMenu);
+
+        function toogleMenu(){
+            $menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
