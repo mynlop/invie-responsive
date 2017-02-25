@@ -262,6 +262,11 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
         font-size: 45px;
         margin-top: 30px;
     }
+    .table{margin: 50px 20px;}
+    .table .contenedor{
+        overflow: auto;
+        border: 1px solid #273b47;
+    }
     .titulo-a{font-size: 18px;}
     .portada{height: auto;}
     .portada .button{
@@ -327,6 +332,8 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
 @media screen and (max-width:500px){
     /*empieza portada*/
     .portada .contenedor{position: static;}
+    .header{position: static;}
+    .header .contenedor{position: static;}
     .menu{
         background: rgba(253, 50, 78, 0.8);
         position: absolute;
