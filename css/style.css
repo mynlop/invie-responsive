@@ -233,9 +233,10 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
     cursor: pointer;
     background: #273b47;
     z-index: 3;
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 20px;
+    display: none;
 }
 .contenedor-video{
     position: relative;
@@ -251,6 +252,16 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
     bottom: 0;
     width: 100%;
     height: 100%;
+}
+.video-demo{
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid #3c5b6e;
+}
+.video-demo-contenedor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
 }
 
 /*querys*/
@@ -288,6 +299,7 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
         margin: 0;
     }
     .contenedor-guitarra-a{padding: 0;}
+    .video-demo-contenedor{margin-bottom: 30px;}
     /*termina guitarras*/
 }
 
@@ -330,13 +342,22 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
 }
 
 @media screen and (max-width:500px){
+    .portada .button{
+        display: block;
+    } 
+    
+    .col2{
+        align-items: stretch;
+    }
     /*empieza portada*/
+    .precios .header .logotipo{margin: 50px 0;}
+    .burger-button{display: inline-block; color: white;}
     .portada .contenedor{position: static;}
     .header{position: static;}
     .header .contenedor{position: static;}
     .menu{
         background: rgba(253, 50, 78, 0.8);
-        position: absolute;
+        position: fixed;
         left: -100%;
         top: 0;
         bottom: 0;
@@ -367,6 +388,7 @@ table, th, td{border: 1px solid #1F313C; border-collapse: collapse;}
     .guitarra img{ width: 200px; }
     .titulo-b{font-size: 30px;}
     /*termina guitarra*/
+    .video-demo-contenedor{margin: 0 10px 30px 10px;}
 }
 
 /*query para pantallas retina 2x*/

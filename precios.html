@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 </head>
-<body>
+<body class="precios">
     <!--empieza header-->
     <header id="header" class="header background">
         <div class="contenedor">
@@ -129,9 +129,11 @@
         function mediaQuery(){
             if(consulta.matches){
                 $burgerButton.addEventListener('touchstart', toogleMenu);
+                $burgerButton.addEventListener('click',toogleMenu);
                 console.log('Se cumplio la condicion');
             }else{
                 $burgerButton.removeEventListener('touchstart', toogleMenu);
+                $burgerButton.removeEventListener('click',toogleMenu);
                 console.log('No se cumplio la condicion');
             }
         }

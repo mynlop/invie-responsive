@@ -34,8 +34,12 @@
     <!--empieza guitarras-->
     <section id="guitarras" class="guitarras contenedor">
         <h2>Nuestras Guitarras</h2>
-        <div class="contenedor-video">
-            <iframe class="video-src" width="560" height="315" src="https://www.youtube.com/embed/_1Umb3ZXbXI" frameborder="0" allowfullscreen></iframe>
+        <div class="video-demo-contenedor">
+            <div class="video-demo">
+                <div class="contenedor-video">
+                    <iframe class="video-src" width="560" height="315" src="https://www.youtube.com/embed/_1Umb3ZXbXI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
         <article class="guitarra">
             <img class="derecha" data-src="images/invie-acustica.png|images/invie-acustica2x.png" alt="Guitarra Acustica" width="350">
@@ -121,9 +125,11 @@
         function mediaQuery(){
             if(consulta.matches){
                 $burgerButton.addEventListener('touchstart', toogleMenu);
+                $burgerButton.addEventListener('click',toogleMenu);
                 console.log('Se cumplio la condicion');
             }else{
                 $burgerButton.removeEventListener('touchstart', toogleMenu);
+                $burgerButton.removeEventListener('click',toogleMenu);
                 console.log('No se cumplio la condicion');
             }
         }
